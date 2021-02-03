@@ -1,99 +1,168 @@
 <!DOCTYPE html>
 <html>
-    <title>Trello</title>
+    <head>
+        <title>Trello</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
     <body>
-        <div>
-            <button>Fazer Login</button>
-            <button>Cadastre-se</button>
-        </div>
+        <header class="gradient--medium">
+            <nav class="padding--top--md padding--bottom--md row-block justify-between padding--right--md">
+                <img src="images/trello-logo.png" alt="trello-logo">
+                <div>
+                    <a href="" class="btn btn--transparent text--white padding--all-sm">Fazer Login</a href="">
+                    <a href="" class="btn btn--white text--lightBlue padding--all-sm">Cadastrar-se</a href="">
+                </div>
+            </nav>
 
-        <div>
-            <span>O Trello ajuda os times a trabalhar com mais colaboração e ter mais produtividade.</span>
-            <span>Com os quadros, listas e cartões do Trello, os times podem organizar e priorizar projetos de um jeito divertido, flexível e gratificante.</span>
-        </div>
-        
-        <div>
-            <input type="text" name="Email" id="Email" placeholder>
-            <button>Cadastre-se, é grátis!</button>
-        </div>
+            <div class="margin--body">
+                <div class="row-block align-center">
+                    <div class="text--white">
+                        <h1>O Trello ajuda os times a trabalhar com mais colaboração e ter mais produtividade.</h1>
+                        <p>Com os quadros, listas e cartões do Trello, os times podem organizar e priorizar projetos de um jeito divertido, flexível e gratificante.</p>
+                    </div>
+                    <img src="images/hero-a.svg" alt="hero image">
+                </div>
 
-        <div>
-            <span>Trabalhe com qualquer time</span>
-            <span>Quer seja para trabalho, um projeto lateral ou até mesmo as próximas férias em família, o Trello ajuda seu time a manter-se organizado.</span>
-            <button>Comece a fazer</button>
-        </div>
-        
-        <div>
-            <span>Informações em uma consulta</span>
-            <span>Entre em detalhes adicionando comentários, anexos, datas de entrega e mais diretamente nos cartões do Trello. Colabore em projetos do início ao fim.</span>
-        </div>
-        
-        <div>
-            <span>Automação de fluxo de trabalho integrada com o Butler</span>
-            <span>Deixe os robôs fazerem todo o trabalho! Aumente a produtividade utilizando o poder da automação em todo o seu time com o Butler e remova tarefas monótonas das suas listas de afazeres com:</span>
-            <ul>
-                <li>Gatilhos baseados em regras</li>
-                <li>Botões personalizados de cartão e quadro</li>
-                <li>Comandos de calendário</li>
-                <li>Comandos de data de entrega</li>
-            </ul>
-        </div>
+                <div>
+                    <input type="text" name="Email" id="Email" placeholder="Email" class="padding--all-sm">
+                    <a href="" class="btn btn--green text--white padding--all-sm">Cadastre-se, é grátis!</a href="">
+                </div>
+            </div>
+        </header>
 
-        <div>
-            <span>Veja como funciona</span>
-            <span>Tire suas ideias do papel em questão de segundos com os quadros, listas e cartões práticos e intuitivos do Trello.</span>
-        </div>
-        
-        <div>
-            <span>O Trello do seu jeito</span>
-            <span>Use o Trello do jeito que for melhor para o seu time. Temos a flexibilidade e os recursos que se ajustam a qualquer estilo.</span>
-        </div>
-        
-        <div>
-            <div>
-                <span>A estratégia do time</span>
-                <span>É fácil colocar seu time todo para trabalhar com o Trello. Reunimos todos os quadros e ferramentas necessários para o sucesso do seu time em um único recurso.</span>
-                <button>Planeje sua estratégia</button>
+        <div class="margin--body">
+            <div class="text--blue row-block">
+                <div>
+                    <h3>Trabalhe com qualquer time</h3>
+                    <p>Quer seja para trabalho, um projeto lateral ou até mesmo as próximas férias em família, o Trello ajuda seu time a manter-se organizado.</p>
+                    <a href="" class="btn btn--blue text--white padding--all-sm">Comece a fazer →</a href="">
+                </div>
+                <div class="gradient--light border-radius--md size--full padding--all-md">
+                    <div class="text--white background--medium-blue text-bold padding--all-sm border-radius--sm margin--bottom--md">Tarefas do time</div>
+                    <div class="row-block">
+                        <div class="background--light-blue border-radius--sm padding--all-sm">
+                            <div class="text-bold margin--bottom--sm">Em andamento</div>
+                            <div class="background--white text-bold margin--bottom--sm border-radius--sm padding--all-sm">
+                                <div class="tag--blue border-radius--sm margin--bottom--sm"></div>
+                                Reunião com cliente
+                            </div>
+                            <div class="background--white text-bold margin--bottom--sm border-radius--sm padding--all-sm">
+                                <div class="tag--red border-radius--sm margin--bottom--sm"></div>
+                                Planejar webinar
+                            </div>
+                            <div class="background--white text-bold margin--bottom--sm border-radius--sm padding--all-sm">
+                                <div class="tag--purple border-radius--sm margin--bottom--sm"></div>
+                                Newslletter por e-mail
+                            </div>
+                            Adicionar um cartão...
+                        </div>
+                        <div class="background--light-blue border-radius--sm padding--all-sm">
+                            <div class="text-bold margin--bottom--sm">Concluído</div>
+                            <div class="background--white text-bold margin--bottom--sm border-radius--sm padding--all-sm">
+                                <div class="tag--red border-radius--sm margin--bottom--sm"></div>
+                                Publicar podcast
+                            </div>
+                            <div class="background--white text-bold margin--bottom--sm border-radius--sm padding--all-sm">
+                                <div class="tag--purple border-radius--sm margin--bottom--sm"></div>
+                                Publicar site
+                            </div>
+                            Adicionar um cartão...
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div>
-                <span>Uma Plataforma de Produtividade</span>
-                <span>Integre os apps que seu time já usa diretamente em seu fluxo de trabalho. Os Power-Ups transformam os quadros do Trello em aplicativos dinâmicos para atender as necessidades empresariais exclusivas de seu time.</span>
-                <button>Dê um Power-Up em seu Fluxo de Trabalho</button>
+            <div class="text--blue">
+                <h3>Informações em uma consulta</h3>
+                <p>Entre em detalhes adicionando comentários, anexos, datas de entrega e mais diretamente nos cartões do Trello. Colabore em projetos do início ao fim.</p>
             </div>
             
-            <div>
-                <span>Sempre em Sincronização</span>
-                <span>Não importa onde você estiver, o Trello mantém a sincronização em todos os seus dispositivos. Colabore com seu time em qualquer lugar, desde sentado no ônibus até descansando na praia.</span>
-                <button>App Store</button>
-                <button>Google Play</button>
+            <div class="text--blue">
+                <h4>Automação de fluxo de trabalho integrada com o Butler</h4>
+                <p>Deixe os robôs fazerem todo o trabalho! Aumente a produtividade utilizando o poder da automação em todo o seu time com o Butler e remova tarefas monótonas das suas listas de afazeres com:</p>
+                <ul>
+                    <li>Gatilhos baseados em regras</li>
+                    <li>Botões personalizados de cartão e quadro</li>
+                    <li>Comandos de calendário</li>
+                    <li>Comandos de data de entrega</li>
+                </ul>
+                <img src="images/butler.png" alt="butler">
             </div>
-        </div>
-       
-        <div>
-            <span>Trabalhe com mais inteligência usando o Trello</span>
-            <span>Empresas de todos os formatos e portes usam o Trello.</span>
-            <button>Descubra como</button>
-        </div>
+
+            <div>
+            <div class="text--blue">
+                <h3>Veja como funciona</h3>
+                <p>Tire suas ideias do papel em questão de segundos com os quadros, listas e cartões práticos e intuitivos do Trello.</p>
+            </div>
+            
+            <div class="text--blue">
+                <h3>O Trello do seu jeito</h3>
+                <p>Use o Trello do jeito que for melhor para o seu time. Temos a flexibilidade e os recursos que se ajustam a qualquer estilo.</p>
+            </div>
+            
+            <div class="text--blue">
+                <div>
+                    <h4>A estratégia do time</h4>
+                    <p>É fácil colocar seu time todo para trabalhar com o Trello. Reunimos todos os quadros e ferramentas necessários para o sucesso do seu time em um único recurso.</p>
+                    <a href="" class="btn btn--blue btn--white padding--all-sm">Planeje sua estratégia</a href="">
+                    <img src="images/updated-layouts-collab.png" alt="updated-layouts-collab">
+                </div>
+                
+                <div>
+                    <h4>Uma Plataforma de Produtividade</h4>
+                    <p>Integre os apps que seu time já usa diretamente em seu fluxo de trabalho. Os Power-Ups transformam os quadros do Trello em aplicativos dinâmicos para atender as necessidades empresariais exclusivas de seu time.</p>
+                    <a href="" class="btn btn--blue btn--white padding--all-sm">Dê um Power-Up em seu Fluxo de Trabalho</a href="">
+                    <img src="images/updated-layouts-platform.png" alt="updated-layouts-platform">
+                </div>
+                
+                <div>
+                    <h4>Sempre em Sincronização</h4>
+                    <p>Não importa onde você estiver, o Trello mantém a sincronização em todos os seus dispositivos. Colabore com seu time em qualquer lugar, desde sentado no ônibus até descansando na praia.</p>
+                    <input type="image" alt="App Store" src="images/btn-appstore-black.png" class="size--logo--sm">
+                    <input type="image" alt="Google Play" src="images/btn-playstore-black.png" class="size--logo--sm">
+                </div>
+            </div>
         
-        <div>
-            <span>Comece a planejar hoje</span>
-            <span>Cadastre-se e torne-se um dos mais de 1 milhão de times em todo o mundo que usam o Trello para produzir mais.</span>
-            <button>Comece agora - é grátis!</button>
+            <div class="text--white gradient--dark border-radius--md padding--all-xl align-center column-block">
+                <h3>Trabalhe com mais inteligência usando o Trello</h3>
+                <p>Empresas de todos os formatos e portes usam o Trello.</p>
+                <div class="row-block flex-wrap justify-center margin--bottom--xl">
+                    <img src="images/logo-google.svg" alt="logo-google" class="size--logo margin--right--xl margin--top--xl">
+                    <img src="images/logo-fender.svg" alt="logo-fender" class="size--logo margin--right--xl margin--top--xl">
+                    <img src="images/logo-squarespace.svg" alt="logo-squarespace" class="size--logo margin--right--xl margin--top--xl">
+                    <img src="images/logo-costco.svg" alt="logo-costco" class="size--logo margin--right--xl margin--top--xl">
+                    <img src="images/logo-lush.svg" alt="logo-lush" class="size--logo margin--right--xl margin--top--xl">
+                    <img src="images/logo-pinterest.svg" alt="logo-pinterest" class="size--logo margin--right--xl margin--top--xl">
+                    <img src="images/logo-peloton.svg" alt="logo-peloton" class="size--logo margin--top--xl">
+                </div>
+                <a href="" class="btn btn--white text--blue padding--all-sm">Descubra como →</a href="">
+            </div>
+            
+            <div class="text--blue">
+                <h3>Comece a planejar hoje</h3>
+                <p>Cadastre-se e torne-se um dos mais de 1 milhão de times em todo o mundo que usam o Trello para produzir mais.</p>
+                <a href="" class="btn btn--green text--white padding--all-sm">Comece agora - é grátis!</a href="">
+            </div>
+
+            <footer>
+                <select name="languages" id=""></select>
+                <nav>
+                    <a href="">Modelos</a>
+                    <a href="">Preços</a>
+                    <a href="">Aplicativos</a>
+                    <a href="">Vagas</a>
+                    <a href="">Blog</a>
+                    <a href="">Desenvolvedores</a>
+                    <a href="">Sobre</a>
+                    <a href="">Ajuda</a>
+                    <a href="">Jurídico</a>
+                    <a href="">Configuração de cookies</a>
+                    <a href="">Privacidade</a>
+                </nav>
+                <p> © Copyright 2021. Todos os direitos reservados.</p>
+            </footer>
         </div>
-        
-        <select name="languages" id=""></select>
-        <a href="">Modelos</a>
-        <a href="">Preços</a>
-        <a href="">Aplicativos</a>
-        <a href="">Vagas</a>
-        <a href="">Blog</a>
-        <a href="">Desenvolvedores</a>
-        <a href="">Sobre</a>
-        <a href="">Ajuda</a>
-        <a href="">Jurídico</a>
-        <a href="">Configuração de cookies</a>
-        <a href="">Privacidade</a>
-        <span> © Copyright 2021. Todos os direitos reservados.</span>
     </body>
 </html>
