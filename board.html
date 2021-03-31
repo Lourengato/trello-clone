@@ -4,14 +4,71 @@
         <title>Trello</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     </head>
     
-    <body>
-        <i class="material-icons">apps</i>
-        <i class="material-icons">home</i>
-        <i class="material-icons">search</i>
-        <i class="material-icons">add</i>
-        <i class="material-icons">info</i>
+    <body class="board-color--background">
+        <header class="board-color--header row-block justify-between padding--all-xs">
+            <div class="align-center">
+                <button class="board-color--button--header text--white btn"><span class="material-icons ">apps</span></button>
+                <button class="board-color--button--header text--white btn"><i class="material-icons-outlined">home</i></button>
+                <button class="board-color--button--header text--white btn full-height">Quadros</button>
+                <div class="board-color--button text--white border-radius--sm">
+                    <input type="text" class="full-height padding--left--sm board-color--button" placeholder="Ir para...">
+                    <i class="material-icons">search</i>
+                </div>
+            </div>
+            <div>
+                <img src="images/trello-logo-board.png" alt="trello-logo">
+            </div>
+            <div class="align-center">
+                <button class="board-color--button--header text--white btn"><i class="material-icons">add</i></button>
+                <button class="board-color--button--header text--white btn"><i class="material-icons-outlined">info</i></button>
+                <button class="board-color--button--header text--white btn"><i class="material-icons-outlined">notifications</i></button>
+                <button class="avatar"><i class="material-icons">person</i></button>
+            </div>
+        </header>
+        <div class="text--white row-block justify-between padding--all-xs">
+            <div class="align-center">
+                <button class="board-color--button text--white btn align-center"><span class="material-icons ">apps</span>Quadro</button>
+                <button class="board-color--button text--white btn align-center full-height">Projeto</button>
+                <button class="board-color--button text--white align-center btn"><span class="material-icons">star_outline</button>
+                <button class="board-color--button text--white align-center btn full-height">Portal do cliente</button>
+                <button class="board-color--button text--white align-center btn"><span class="material-icons">lock</span>Particular</button>
+                <button class="avatar"><i class="material-icons">person</i></button>
+                <button class="board-color--button text--white align-center btn full-height">Convidar</button>
+            </div>
+            
+            <div class="align-center">
+                <button class="board-color--button text--white align-center btn"><span class="material-icons">room_service</span>Butler</button>
+                <button class="board-color--button text--white align-center btn"><span class="material-icons">more_horiz</span>Mostrar Menu</button>
+            </div>
+        </div>
+        <div class="row-block">
+            <div class="background--card text--blue border-radius--sm padding--all-sm">
+                <h2 class="text-bold margin--bottom--sm">Em andamento</h2>
+                <div class="background--white margin--bottom--sm border-radius--sm padding--all-sm">
+                    Reunião com cliente
+                </div>
+                <div class="background--white margin--bottom--sm border-radius--sm padding--all-sm">
+                    Planejar webinar
+                </div>
+                <div class="background--white margin--bottom--sm border-radius--sm padding--all-sm">
+                    Newslletter por e-mail
+                </div>
+                <i class="material-icons">add</i>Adicionar outro cartão...
+            </div>
+            <div class="background--card text--blue border-radius--sm padding--all-sm">
+                <h2 class="text-bold margin--bottom--sm">Concluído</h2>
+                <div class="background--white margin--bottom--sm border-radius--sm padding--all-sm">
+                    Publicar podcast
+                </div>
+                <div class="background--white margin--bottom--sm border-radius--sm padding--all-sm">
+                    Publicar site
+                </div>
+                <i class="material-icons">add</i>Adicionar outro cartão...
+            </div>
+            <div><i class="material-icons">add</i>Adicionar outra lista</div>
+        </div>
     </body>
 </html>
