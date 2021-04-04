@@ -9,14 +9,18 @@
 .btn {
     text-align: center;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 3px;
     text-decoration: none;
     cursor: pointer;
     margin: 0 4px 0 0;
-    padding: 3px;
     font-weight: normal;
+    padding: none;
+}
+
+.text-bold {
+    font-weight: bold;
 }
 
 .btn--green {
@@ -72,11 +76,10 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: .5rem;
-    font-family: "Charlie Display",sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: none;
 }
 
 .gradient--dark {
@@ -119,6 +122,10 @@ h1 {
     padding-left: 5px;
 }
 
+.padding--left--md {
+    padding-left: 10px;
+}
+
 .margin--right--xl {
     padding-right: 100px;
 }
@@ -150,8 +157,12 @@ h1 {
     padding: 10px;
 }
 
+.padding--header {
+    padding: 3px;
+}
+
 .padding--all-xs {
-    padding: 5px;
+    padding: 6px;
 }
 
 .padding--all-md {
@@ -162,28 +173,52 @@ h1 {
     padding: 50px;
 }
 
+.padding--y--sm {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.padding--y--md {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.padding--x--sm {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.padding--x--md {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .padding--x--xl {
     padding-left: 400px;
     padding-right: 400px;
 }
 
-.justify-end {
+.display-flex {
     display: flex;
+}
+
+.justify-end {
     justify-content: flex-end;
 }
 
+.justify-start {
+    justify-content: flex-start;
+}
+
 .justify-center {
-    display: flex;
     justify-content: center;
 }
 
 .justify-between {
-    display: flex;
     justify-content: space-between;
 }
 
 .row-block {
-    display: flex;
     flex-direction: row;
 }
 
@@ -198,12 +233,10 @@ h1 {
 }
 
 .align-center {
-    display: flex;
     align-items: center;
 }
 
 .column-block {
-    display: flex;
     flex-direction: column;
 }
 
@@ -218,10 +251,6 @@ h1 {
 .background--medium-blue {
     background-color: rgba(11,86,139,0.25);
 }
-
-/* .background--light-blue {
-    background-color: #E5EFF5;
-} */
 
 .text-bold {
     font-weight: bold;
@@ -260,6 +289,10 @@ h1 {
     width: 50%;
 }
 
+.input-size {
+    width: 144px;
+}
+
 .size--logo {
     height: 50px;
 }
@@ -269,7 +302,6 @@ h1 {
 }
 
 .flex-wrap {
-    display: flex;
     flex-wrap: wrap;
 }
 
@@ -289,8 +321,15 @@ h1 {
 }
 
 .stretch {
-    display: flex;
 	align-items: stretch;
+}
+
+.icon--md {
+    width: 20px;
+}
+
+.icon--sm {
+    width: 16px;
 }
 
 .full-height {
@@ -299,7 +338,15 @@ h1 {
 
 .avatar {
     vertical-align: middle;
+    border-radius: 50%;
+}
+
+.avatar--md {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
+}
+
+.avatar--sm {
+    width: 28px;
+    height: 28px;
 }
