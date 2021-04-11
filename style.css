@@ -44,18 +44,13 @@ h2 {
 }
 
 input {
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
 }
 
 header {
     margin: 0;
     padding: 0;
-}
-
-.head p {
-    font-size: 1.5625rem;
-    font-weight: 300;
 }
 
 h1 {
@@ -77,14 +72,44 @@ h1 {
     padding-left: 5px;
 }
 
-.padding-left-md {
+.padding-left-lg {
     padding-left: 10px;
 }
 
 .margin-bottom-sm {
     margin-bottom: 10px;
 }
+
+.margin-bottom-md {
+    margin-bottom: 20px;
+}
+
+.margin-top-sm {
+    margin-top: 10px;
+}
+
+.margin-top-md {
+    margin-top: 20px;
+}
+
+.margin-right-sm {
+    margin-right: 4px;
+}
+
+.margin-right-md {
+    margin-right: 8px;
+}
+
 .margin-left-sm {
+    margin-right: 4px;
+}
+
+.margin-x-sm {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.margin-left-md {
     margin-left: 10px;
 }
 
@@ -93,11 +118,15 @@ h1 {
 }
 
 .padding-header {
-    padding: 3px;
+    padding: 4px;
 }
 
 .padding-all-xs {
     padding: 6px;
+}
+
+.padding-right-sm {
+    padding-right: 6px;
 }
 
 .padding-y-md {
@@ -108,6 +137,14 @@ h1 {
 .padding-x-sm {
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.padding-right-xs {
+    padding-right: 4px;
+}
+
+.padding-left-md {
+    padding-left: 8px;
 }
 
 .padding-x-md {
@@ -143,12 +180,20 @@ h1 {
     align-items: center;
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 .column {
     flex-direction: column;
 }
 
 .border-radius-sm {
     border-radius: 5px;
+}
+
+.border-radius-xs {
+    border-radius: 3px;
 }
 
 .text-bold {
@@ -176,10 +221,15 @@ h1 {
 }
 
 .board-button-header {
-    background-color: #4db4c6;
+    background-color: RGBA(255,255,255,0.30);
 }
-.board-button {
-    background-color: #52c8dc;
+
+.board-input-header {
+    background-color: #4cb4c4;
+}
+
+.light-background {
+    background-color: RGBA(255,255,255,0.24);
 }
 
 .board-header {
@@ -202,6 +252,10 @@ h1 {
     height: 100%;
 }
 
+.half-height {
+    height: 50%;
+}
+
 .avatar {
     vertical-align: middle;
     border-radius: 50%;
@@ -215,4 +269,12 @@ h1 {
 .avatar-sm {
     width: 28px;
     height: 28px;
+}
+
+.card-size {
+    width: 256px;
+}
+
+.divider {
+    width: 1px;
 }
