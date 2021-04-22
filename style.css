@@ -76,6 +76,10 @@ h1 {
     padding-left: 10px;
 }
 
+.margin-bottom-xs {
+    margin-bottom: 4px;
+}
+
 .margin-bottom-sm {
     margin-bottom: 10px;
 }
@@ -131,12 +135,27 @@ h1 {
 
 .padding-y-md {
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
+}
+
+.padding-y-xs {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.padding-x-xs {
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .padding-x-sm {
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.padding-x--2 {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .padding-right-xs {
@@ -168,6 +187,18 @@ h1 {
     justify-content: center;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
 .justify-between {
     justify-content: space-between;
 }
@@ -182,6 +213,10 @@ h1 {
 
 .align-start {
     align-items: flex-start;
+}
+
+.half-width {
+    width: 50%;
 }
 
 .column {
@@ -248,8 +283,16 @@ h1 {
     width: 16px;
 }
 
+.icon {
+    font-size: 16px !important;
+}
+
 .full-height {
     height: 100%;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .half-height {
@@ -272,9 +315,31 @@ h1 {
 }
 
 .card-size {
-    width: 256px;
+    width: 252px;
 }
 
 .divider {
     width: 1px;
+}
+
+.badge {
+    font-size: 12px;
+    background: hsla(0,0%,100%,.2);
+    border-radius: 12px;
+    margin-left: 8px;
+    padding: 2px 6px;
+}
+
+.badge-late {
+    background-color: #ec9488;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.buttler {
+    background-image: url(https://app.butlerfortrello.com/4428404…/./img/butler-powerup-btn-white.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+    vertical-align: bottom;
 }

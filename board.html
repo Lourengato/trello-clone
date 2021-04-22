@@ -8,7 +8,7 @@
     </head>
     
     <body class="board-background">
-        <header class="board-header display-flex row justify-between padding-header">
+        <header class="board-header display-flex row justify-between padding-header relative">
             <div class="align-center display-flex">
                 <button class="board-button-header display-flex text-white btn display-flex padding-all-xs align-center">
                     <img class="icon-md" src="images/apps.svg" alt="apps">
@@ -16,7 +16,7 @@
                 <button class="board-button-header display-flex text-white btn padding-all-xs align-center">
                     <img class="icon-md" src="images/home.svg" alt="home">
                 </button>
-                <button class="board-button-header display-flex text-white btn full-height padding-x-sm row align-center">
+                <button class="board-button-header display-flex text-white btn full-height padding-x-sm row align-center" >
                     <img class="icon-md" src="images/trello.svg" alt="trello">
                     <div class="text-bold padding-left-md padding-right-xs">Quadros</div>
                 </button>
@@ -25,7 +25,9 @@
                     <img class="icon-md padding-right-sm" src="images/search.svg" alt="search">
                 </div>
             </div>
-            <img src="images/trello-logo-board.png" alt="trello-logo">
+            <div class="justify-center display-flex full-width absolute">
+                <img src="images/trello-logo-board.png" alt="trello-logo" >
+            </div>
             <div class="align-center display-flex">
                 <button class="board-button-header text-white btn display-flex padding-all-xs align-center">
                     <img class="icon-md" src="images/plus.svg" alt="add">
@@ -36,7 +38,7 @@
                 <button class="board-button-header text-white btn display-flex padding-all-xs align-center">
                     <img class="icon-md" src="images/notify.svg" alt="notify">
                 </button>
-                <button class="avatar-md avatar">
+                <button class="avatar-md avatar text-bold">
                     GL
                 </button>
             </div>
@@ -44,27 +46,28 @@
         <div class="text-white row justify-between padding-y-md display-flex padding-left-md padding-right-xs">
             <div class="align-center display-flex">
                 <button class="light-background text-white btn align-center display-flex padding-all-xs full-height">
-                    <img class="icon-sm" src="images/boards.svg" alt="apps">
-                    <div class="padding-x-sm">Quadro</div>
-                    <img class="icon-sm" src="images/more.svg" alt="apps">
+                    <img class="icon-sm padding-x-xs" src="images/boards.svg" alt="apps">
+                    <div class="padding-x-xs">Quadro</div>
+                    <img class="icon-sm padding-x-xs" src="images/more.svg" alt="apps">
                 </button>
                 <button class="light-background text-white display-flex btn align-center padding-x-md full-height">
                     <h1>Projeto Trello Clone</h1>
                 </button>
-                <button class="light-background text-white display-flex align-center btn padding-all-xs full-height">
+                <button class="light-background text-white display-flex align-center margin-right-md btn padding-all-xs padding-x--2 full-height">
                     <img class="icon-sm" src="images/star.svg" alt="apps">
                 </button>
-                <div class="divider light-background margin-right-sm  half-height"></div>
-                <button class="light-background text-white display-flex align-center btn padding-x-md full-height">
+                <div class="divider light-background margin-right-md half-height"></div>
+                <button class="light-background text-white display-flex margin-right-md align-center btn padding-x-md full-height">
                     Portal do cliente
+                    <div class="badge">Free</div>
                 </button>
-                <div class="divider light-background margin-right-sm half-height"></div>
-                <button class="light-background text-white display-flex align-center btn padding-x-md full-height">
+                <div class="divider light-background margin-right-md half-height"></div>
+                <button class="light-background text-white display-flex align-center margin-right-md btn padding-x-md full-height">
                     <img class="icon-sm" src="images/lock.svg" alt="apps">
                     <div class="padding-left-md padding-right-sm">Particular</div>
                 </button>
-                <div class="divider light-background margin-right-sm half-height"></div>
-                <button class="avatar-sm avatar margin-right-sm">
+                <div class="divider light-background margin-right-md half-height"></div>
+                <button class="avatar-sm avatar margin-right-md text-bold">
                     GL
                 </button>
                 <button class="light-background display-flex text-white align-center btn full-height padding-x-md">
@@ -86,28 +89,54 @@
         <div class="padding-x-sm padding-left-md">
             <div class="display-flex align-start">
                 <div class="background-card text-blue border-radius-sm padding-all-sm card-size">
-                    <h2 class="text-bold margin-bottom-sm">Em andamento</h2>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm">
-                        Reunião com cliente
+                    <div class="margin-bottom-sm padding-left-sm display-flex row justify-between">
+                        <h2 class="text-bold">Em andamento</h2>
+                        <img class="icon-md" src="images/apps.svg" alt="apps">
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm">
-                        Planejar webinar
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
+                        <div class="margin-bottom-xs">Reunião com cliente</div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
+                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                            <span>1 de fev</span>
+                        </div>
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm">
-                        Newslletter por e-mail
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
+                        <div class="margin-bottom-xs">Planejar webinar</div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
+                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                            <span>1 de fev</span>
+                        </div>
+                    </div>
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
+                        <div class="margin-bottom-xs">Newslletter por e-mail</div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
+                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                            <span>1 de fev</span>
+                        </div>
                     </div>
                     <div class="display-flex align-center margin-top-md margin-bottom-sm">
                         <img class="icon-md margin-right-md" src="images/plus.svg" alt="add">
-                        <div>Adicionar outro cartão</div>
+                        <div class="margin-bottom-xs">Adicionar outro cartão</div>
                     </div>
                 </div>
                 <div class="background-card text-blue border-radius-sm padding-all-sm margin-left-md card-size">
-                    <h2 class="text-bold margin-bottom-sm">Concluído</h2>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm">
-                        Publicar podcast
+                    <div class="margin-bottom-sm padding-left-sm display-flex row justify-between">
+                        <h2 class="text-bold">Concluído</h2>
+                        <img class="icon-md" src="images/apps.svg" alt="apps">
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm">
-                        Publicar site
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
+                        <div class="margin-bottom-xs">Publicar podcast</div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
+                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                            <span>1 de fev</span>
+                        </div>
+                    </div>
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
+                        <div class="margin-bottom-xs">Publicar site</div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
+                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                            <span>1 de fev</span>
+                        </div>
                     </div>
                     <div class="display-flex align-center margin-top-md margin-bottom-sm">
                         <img class="icon-md margin-right-md" src="images/plus.svg" alt="add">
