@@ -1,41 +1,157 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Trello</title>
+        <title>Projeto Trello</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     </head>
     
     <body class="board-background">
-        <header class="board-header display-flex row justify-between padding-header relative">
+        <div class="full-height full-width overlay">
+            <div class="modal border-radius-sm padding-modal no-wrap">
+                <div class="margin-header">
+                    <div class="row display-flex align-center justify-between">
+                        <div class="row display-flex align-center">
+                            <span class="material-icons-outlined icon-md margin-right-md">add</span>
+                            <h1>Cartão</h1>
+                        </div>
+                        <span class="material-icons-outlined icon-md margin-right-md">add</span>
+                    </div>
+                    <div class="modal-gutter">na lista <a href="">Lista</a></div>
+                </div>
+                <div class="row display-flex">
+                    <div class="full-width margin-right-md">
+                        <div class="full-width margin-header">
+                            <div class="row display-flex align-center modal-header-margin">
+                                <span class="material-icons-outlined icon-md margin-right-md">add</span>
+                                <div class="text-bold">Descrição</div>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute fake-placeholder">Adicione uma descrição mais detalhada...</div>
+                                <input type="textarea" class="modal-gutter modal-textarea">
+                            </div>
+                        </div>
+                        <div class="row display-flex justify-between modal-header-margin">
+                            <div class="row display-flex align-center">
+                                <span class="material-icons-outlined icon-md margin-right-md">add</span>
+                                <div class="text-bold">Atividade</div>
+                            </div>
+                            <button class="modal-btn">Mostrar Detalhes</button>
+                        </div>
+                        <div class="row display-flex align-center">
+                            <button class="avatar-md avatar text-bold margin-right-md">
+                                GL
+                            </button>
+                            <input type="text" class="full-width padding-all-xs input-coment" placeholder="Escreva um comentário...">
+                        </div>
+                    </div>
+                    <div class="toolbar margin-left-md-md">
+                        <div class="modal-margin-bottom">
+                            <div class="text-bold">ADICIONAR AO CARTÃO</div>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Membros</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Etiquetas</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Checklist</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Datas</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Anexo</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Capa</div>
+                            </button>
+                        </div>
+                        <div class="modal-margin-bottom">
+                            <div class="text-bold">POWER-UPS</div>
+                            <div class="display-flex align-center more-card padding-all-sm">
+                                <span class="material-icons-outlined icon-md margin-right-md">add</span>
+                                <div>Adicionar Power-...</div>
+                            </div>
+                            <div class="card-back-pup-upgrade-prompt-opener">Obtenha power-ups ilimitados e muito mais.</div>
+                            <button class="display-flex modal-btn row align-center full-width att-btn" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Atualizar Área de trabalho</div>
+                            </button>
+                        </div>
+                        <div class="modal-margin-bottom">
+                            <div class="text-bold">BUTLER</div>
+                            <div class="display-flex align-center more-card padding-all-sm">
+                                <span class="material-icons-outlined icon-md margin-right-md">add</span>
+                                <div>Adicionar botão</div>
+                            </div>
+                        </div>
+                        <div class="modal-margin-bottom">
+                            <div class="text-bold">AÇÕES</div>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Mover</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Copiar</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Criar modelo</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Seguir</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Arquivar</div>
+                            </button>
+                            <button class="display-flex modal-btn row align-center full-width" >
+                                <img class="icon-md" src="images/trello.svg" alt="trello">
+                                <div class="text-bold padding-left-md padding-right-xs">Compartilhar</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="board-header display-flex row justify-between padding-header relative full-width flex-wrap">
             <div class="align-center display-flex">
-                <button class="board-button-header display-flex text-white btn display-flex padding-all-xs align-center">
+                <button class="board-button-header btn-header btn-focus display-flex text-white btn display-flex padding-all-xs align-center">
                     <img class="icon-md" src="images/apps.svg" alt="apps">
                 </button>
-                <button class="board-button-header display-flex text-white btn padding-all-xs align-center">
+                <button class="board-button-header btn-header display-flex text-white btn padding-all-xs align-center">
                     <img class="icon-md" src="images/home.svg" alt="home">
                 </button>
-                <button class="board-button-header display-flex text-white btn full-height padding-x-sm row align-center" >
+                <button class="board-button-header btn-header display-flex text-white btn full-height padding-x-sm row align-center" >
                     <img class="icon-md" src="images/trello.svg" alt="trello">
                     <div class="text-bold padding-left-md padding-right-xs">Quadros</div>
                 </button>
-                <div class="board-input-header display-flex text-white border-radius-xs align-center padding-x-sm full-height">
-                    <input type="text" class="full-height padding-left-sm board-button-header input-size board-input-header" placeholder="Ir para...">
+                <div class="board-button-header btn-header input-div display-flex text-white border-radius-xs align-center padding-x-sm full-height">
+                    <input type="text" class="full-height input-div padding-left-sm input-size" placeholder="Ir para...">
                     <img class="icon-md padding-right-sm" src="images/search.svg" alt="search">
                 </div>
             </div>
-            <div class="justify-center display-flex full-width absolute">
-                <img src="images/trello-logo-board.png" alt="trello-logo" >
+            <div class="justify-center display-flex trello-icon-header full-width absolute">
+                <img src="images/trello-logo-board.png" class="trello-icon btn-header" alt="trello-logo" >
             </div>
             <div class="align-center display-flex">
-                <button class="board-button-header text-white btn display-flex padding-all-xs align-center">
+                <button class="board-button-header text-white btn-header btn display-flex padding-all-xs align-center">
                     <img class="icon-md" src="images/plus.svg" alt="add">
                 </button>
-                <button class="board-button-header text-white btn display-flex padding-all-xs align-center">
+                <button class="board-button-header text-white btn-header btn display-flex padding-all-xs align-center">
                     <img class="icon-md" src="images/info.svg" alt="info">
                 </button>
-                <button class="board-button-header text-white btn display-flex padding-all-xs align-center">
+                <button class="board-button-header text-white btn-header btn display-flex padding-all-xs align-center">
                     <img class="icon-md" src="images/notify.svg" alt="notify">
                 </button>
                 <button class="avatar-md avatar text-bold">
@@ -43,26 +159,26 @@
                 </button>
             </div>
         </header>
-        <div class="text-white row justify-between padding-y-md display-flex padding-left-md padding-right-xs">
+        <div class="text-white row justify-between flex-wrap padding-y-md display-flex padding-left-md padding-right-xs relative">
             <div class="align-center display-flex">
-                <button class="light-background text-white btn align-center display-flex padding-all-xs full-height">
+                <button class="light-background btn-sub-header text-white btn align-center display-flex padding-all-xs full-height">
                     <img class="icon-sm padding-x-xs" src="images/boards.svg" alt="apps">
                     <div class="padding-x-xs">Quadro</div>
                     <img class="icon-sm padding-x-xs" src="images/more.svg" alt="apps">
                 </button>
-                <button class="light-background text-white display-flex btn align-center padding-x-md full-height">
+                <button class="light-background btn-sub-header text-white display-flex btn align-center padding-x-md full-height">
                     <h1>Projeto Trello Clone</h1>
                 </button>
-                <button class="light-background text-white display-flex align-center margin-right-md btn padding-all-xs padding-x--2 full-height">
+                <button class="light-background btn-sub-header text-white display-flex align-center margin-right-md btn padding-all-xs padding-x--2 full-height">
                     <img class="icon-sm" src="images/star.svg" alt="apps">
                 </button>
                 <div class="divider light-background margin-right-md half-height"></div>
-                <button class="light-background text-white display-flex margin-right-md align-center btn padding-x-md full-height">
+                <button class="light-background btn-sub-header text-white display-flex margin-right-md align-center btn padding-x-md full-height">
                     Portal do cliente
                     <div class="badge">Free</div>
                 </button>
                 <div class="divider light-background margin-right-md half-height"></div>
-                <button class="light-background text-white display-flex align-center margin-right-md btn padding-x-md full-height">
+                <button class="light-background btn-sub-header text-white display-flex align-center margin-right-md btn padding-x-md full-height">
                     <img class="icon-sm" src="images/lock.svg" alt="apps">
                     <div class="padding-left-md padding-right-sm">Particular</div>
                 </button>
@@ -70,18 +186,18 @@
                 <button class="avatar-sm avatar margin-right-md text-bold">
                     GL
                 </button>
-                <button class="light-background display-flex text-white align-center btn full-height padding-x-md">
+                <button class="light-background btn-sub-header display-flex text-white align-center btn full-height padding-x-md">
                     Convidar
                 </button>
             </div>
             
             <div class="align-center display-flex">
-                <button class="light-background display-flex text-white align-center btn padding-x-md full-height">
+                <button class="light-background btn-sub-header display-flex text-white align-center btn padding-x-md full-height">
                     <img class="icon-md" src="images/apps.svg" alt="apps">
                     <div class="padding-left-md padding-right-sm">Butler</div>
                 </button>
-                <button class="light-background display-flex text-white align-center btn padding-x-md full-height">
-                    <img class="icon-md" src="images/apps.svg" alt="apps">
+                <button class="light-background btn-sub-header display-flex text-white align-center btn padding-x-md full-height">
+                    <span class="material-icons-outlined icon">more_horiz</span>
                     <div class="padding-left-md padding-right-sm">Mostrar Menu</div>
                 </button>
             </div>
@@ -91,61 +207,81 @@
                 <div class="background-card text-blue border-radius-sm padding-all-sm card-size">
                     <div class="margin-bottom-sm padding-left-sm display-flex row justify-between">
                         <h2 class="text-bold">Em andamento</h2>
-                        <img class="icon-md" src="images/apps.svg" alt="apps">
+                        <span class="material-icons-outlined icon">more_horiz</span>
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
-                        <div class="margin-bottom-xs">Reunião com cliente</div>
-                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
-                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex card align-start column">
+                        <div class="row display-flex full-width justify-between">
+                            <div class="margin-bottom-xs">Reunião com cliente</div>
+                            <span class="material-icons-outlined icon edit-icon display-flex padding-all-xs align-center">edit</span>
+                        </div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center">
+                            <span class="material-icons-outlined icon icon-badge-hover margin-right-sm">check_box_outline_blank</span> 
+                            <span class="material-icons-outlined icon icon-badge margin-right-sm">schedule</span>
                             <span>1 de fev</span>
                         </div>
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
-                        <div class="margin-bottom-xs">Planejar webinar</div>
-                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
-                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex card align-start column">
+                        <div class="row display-flex full-width justify-between">
+                            <div class="margin-bottom-xs">Planejar webinar</div>
+                            <span class="material-icons-outlined icon edit-icon display-flex padding-all-xs align-center">edit</span>
+                        </div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center">
+                            <span class="material-icons-outlined icon icon-badge-hover margin-right-sm">check_box_outline_blank</span> 
+                            <span class="material-icons-outlined icon icon-badge margin-right-sm">schedule</span>
                             <span>1 de fev</span>
                         </div>
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
-                        <div class="margin-bottom-xs">Newslletter por e-mail</div>
-                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
-                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex card align-start column">
+                        <div class="row display-flex full-width justify-between">
+                            <div class="margin-bottom-xs">Newslletter por e-mail</div>
+                            <span class="material-icons-outlined icon edit-icon display-flex padding-all-xs align-center">edit</span>
+                        </div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center">
+                            <span class="material-icons-outlined icon icon-badge-hover margin-right-sm">check_box_outline_blank</span> 
+                            <span class="material-icons-outlined icon icon-badge margin-right-sm">schedule</span>
                             <span>1 de fev</span>
                         </div>
                     </div>
-                    <div class="display-flex align-center margin-top-md margin-bottom-sm">
-                        <img class="icon-md margin-right-md" src="images/plus.svg" alt="add">
-                        <div class="margin-bottom-xs">Adicionar outro cartão</div>
+                    <div class="display-flex align-center more-card padding-all-sm">
+                        <span class="material-icons-outlined icon-md margin-right-md">add</span>
+                        <div>Adicionar outro cartão</div>
                     </div>
                 </div>
                 <div class="background-card text-blue border-radius-sm padding-all-sm margin-left-md card-size">
                     <div class="margin-bottom-sm padding-left-sm display-flex row justify-between">
                         <h2 class="text-bold">Concluído</h2>
-                        <img class="icon-md" src="images/apps.svg" alt="apps">
+                        <span class="material-icons-outlined icon">more_horiz</span>
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
-                        <div class="margin-bottom-xs">Publicar podcast</div>
-                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
-                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex card align-start column">
+                        <div class="row display-flex full-width justify-between">
+                            <div class="margin-bottom-xs">Publicar podcast</div>
+                            <span class="material-icons-outlined icon edit-icon display-flex padding-all-xs align-center">edit</span>
+                        </div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center">
+                            <span class="material-icons-outlined icon icon-badge-hover margin-right-sm">check_box_outline_blank</span> 
+                            <span class="material-icons-outlined icon icon-badge margin-right-sm">schedule</span>
                             <span>1 de fev</span>
                         </div>
                     </div>
-                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex align-start column">
-                        <div class="margin-bottom-xs">Publicar site</div>
-                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center"> 
-                            <span class="material-icons-outlined icon margin-right-sm">schedule</span>
+                    <div class="background-white margin-bottom-sm border-radius-sm padding-all-sm display-flex card align-start column">
+                        <div class="row display-flex full-width justify-between">
+                            <div class="margin-bottom-xs">Publicar site</div>
+                            <span class="material-icons-outlined icon edit-icon display-flex padding-all-xs align-center">edit</span>
+                        </div>
+                        <div class="badge-late padding-x-sm padding-y-xs display-flex align-center">
+                            <span class="material-icons-outlined icon icon-badge-hover margin-right-sm">check_box_outline_blank</span> 
+                            <span class="material-icons-outlined icon icon-badge margin-right-sm">schedule</span>
                             <span>1 de fev</span>
                         </div>
                     </div>
-                    <div class="display-flex align-center margin-top-md margin-bottom-sm">
-                        <img class="icon-md margin-right-md" src="images/plus.svg" alt="add">
+                    <div class="display-flex align-center more-card padding-all-sm">
+                        <span class="material-icons-outlined icon-md margin-right-md">add</span>
                         <div>Adicionar outro cartão</div>
                     </div>
                 </div>
-                <div class="margin-left-md display-flex align-center card-size light-background border-radius-sm padding-all-sm">
-                    <img class="icon-md margin-right-md" src="images/plus.svg" alt="add">
-                    <div>Adicionar outra lista</div>
+                <div class="margin-left-md display-flex btn-sub-header align-center card-size light-background border-radius-sm padding-all-sm">
+                    <span class="material-icons-outlined icon-md text-white margin-right-md">add</span>
+                    <div class="text-white">Adicionar outra lista</div>
                 </div>
             </div>
         </div>

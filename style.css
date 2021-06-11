@@ -17,6 +17,7 @@
     margin: 0 4px 0 0;
     font-weight: normal;
     padding: none;
+    white-space: nowrap;
 }
 
 .text-bold {
@@ -35,6 +36,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    height: 100%;
 }
 
 h2 {
@@ -93,7 +95,7 @@ h1 {
 }
 
 .margin-top-md {
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
 .margin-right-sm {
@@ -106,6 +108,10 @@ h1 {
 
 .margin-left-sm {
     margin-right: 4px;
+}
+
+.margin-left-md-md {
+    margin-left: 8px;
 }
 
 .margin-x-sm {
@@ -131,6 +137,10 @@ h1 {
 
 .padding-right-sm {
     padding-right: 6px;
+}
+
+.padding-top {
+    padding-top: 4px;
 }
 
 .padding-y-md {
@@ -191,6 +201,15 @@ h1 {
     position: relative;
 }
 
+.modal {
+    background-color: #f4f5f7;
+    margin-top: 48px;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 768px;
+    z-index: 500;
+}
+
 .absolute {
     position: absolute;
 }
@@ -199,8 +218,20 @@ h1 {
     align-self: center;
 }
 
+.align-self-end {
+    align-self: flex-end;
+}
+
 .justify-between {
     justify-content: space-between;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.toolbar {
+    max-width: 168px;
 }
 
 .row {
@@ -243,6 +274,11 @@ h1 {
     background-color: #ebecf0;
 }
 
+.card {
+    box-shadow: 0 1px 0 rgb(9 30 66 / 25%);
+    cursor: pointer;
+}
+
 .input-size {
     width: 144px;
 }
@@ -252,15 +288,13 @@ h1 {
 }
 
 .board-background {
+    width: 100%;
+    height: 100%;
     background-color: #00aecc;
 }
 
 .board-button-header {
     background-color: RGBA(255,255,255,0.30);
-}
-
-.board-input-header {
-    background-color: #4cb4c4;
 }
 
 .light-background {
@@ -281,6 +315,20 @@ h1 {
 
 .icon-sm {
     width: 16px;
+}
+
+.padding-modal {
+    padding: 16px;
+}
+
+.overlay {
+    overflow-x: hidden;
+    justify-content: center;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    background-color: rgba(0,0,0,.64);
 }
 
 .icon {
@@ -336,10 +384,219 @@ h1 {
     color: #fff;
 }
 
+.badge-late .icon-badge {
+    display: block;
+}
+
+.badge-late .icon-badge-hover {
+    display: none;
+}
+
+.badge-late:hover {
+    background-color: #eb5a46;
+}
+
+.badge-late:hover .icon-badge {
+    display: none;
+}
+
+.badge-late:hover .icon-badge-hover {
+    display: block;
+}
+
 .buttler {
     background-image: url(https://app.butlerfortrello.com/4428404…/./img/butler-powerup-btn-white.svg);
     background-size: 14px;
     background-repeat: no-repeat;
     background-position: 3px 3px;
     vertical-align: bottom;
+}
+
+.trello-icon {
+    background: white;
+}
+
+.trello-icon:hover {
+    opacity: 0.8;
+}
+
+.trello-icon-header {
+    z-index: 0;
+}
+
+.btn-header {
+     z-index: 5;
+}
+
+.btn-header:hover {
+    background-color: hsla(0,0%,100%,.2);
+    color: #fff;
+    outline: 0;
+}
+
+.btn-sub-header:hover {
+    background-color: hsla(0,0%,100%,.32);
+    cursor: pointer;
+}
+
+.more-card:hover {
+    background-color: rgba(9,30,66,.08);
+    color: #172b4d;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #f4f5f7;
+    border-bottom-color: rgba(9,30,66,.25);
+}
+
+.board-button-header ::placeholder {
+  color: #f4f5f7;
+}
+
+.btn-header input {
+    background-color: transparent;
+}
+
+.menu-div {
+    box-shadow: 0 1px 0 rgb(9 30 66 / 25%);
+    z-index: 10;
+    width: 304px;
+    height: 607px;
+}
+
+.menu-div-left {
+    left: auto;
+    right: 0;
+}
+
+.card:hover .edit-icon {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.edit-icon:hover {
+    background-color: rgba(9,30,66,.08);
+}
+
+.card .edit-icon {
+    opacity: 0;
+}
+
+.card .edit-icon:hover {
+    background-color: #f4f5f7;
+    border-bottom-color: rgba(9,30,66,.25);
+}
+
+.board-button-header input {
+    transition: all 0.2s ease-out;
+}
+
+.input-div {
+    transition: all 0.2s ease-out;
+}
+
+.input-div:focus {
+    background-color: #fff;
+}
+
+.board-button-header input:focus {
+    outline: none;
+    background-color: #fff;
+    width: 318px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.modal input {
+    color: #172b4d;
+}
+
+.modal-gutter {
+    margin-left: 40px;
+}
+
+.modal-input-bg {
+    background-color: rgba(9,30,66,.04);
+}
+
+.modal-header-margin {
+    padding: 8px 0;
+    position: relative;
+    margin: 0 0 4px 0px;
+}
+
+.margin-header {
+    margin-bottom: 24px;
+}
+
+.modal-margin-bottom {
+    margin-bottom: 24px;
+}
+
+.modal-btn {
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+    line-height: 20px;
+    margin-top: 8px;
+    padding: 6px 12px;
+    text-decoration: none;
+    position: relative;
+    background-color: rgba(9,30,66,.04);
+    box-shadow: none;
+}
+
+.card-back-pup-upgrade-prompt-opener {
+    color: #97a0af;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.att-btn {
+    background-color: #EDDBF4;
+    display: inline-flex;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 4px;
+    text-decoration: none;
+    line-height: 16px;
+    margin-bottom: 0;
+}
+
+.title-space {
+    padding: 8px 0;
+    align-items: center;
+    min-height: 32px;
+    margin: 0 0 4px 40px;
+}
+
+.modal-textarea {
+    background-color: rgba(9,30,66,.04);
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    min-height: 40px;
+    padding: 8px 0px;
+    text-decoration: none;
+    min-width: calc(100% - 40px);
+}
+
+.fake-placeholder {
+    padding: 8px 12px;
+    margin-left: 40px;
+}
+
+.input-coment {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    height: 20px;
+    padding: 8px 12px;
 }
